@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="anime-master/lib/anime.min.js"></script>
+
+    <div class="container-app" id="app">
+        
+        <header class="header_cont">
+            
+            <div class="header">
+                
+                <div class="header__name">
+                    <p>
+                        <span class="logoLetter" v-for="letter in nameLetters">{{ letter }}</span>
+                    </p>
+                </div>
+                
+                <div class="header__socials">
+                    <img class="header__socials-s" src="/img/svgs/dark-email.svg" alt="Email Logo">
+                    <img class="header__socials-s" src="/img/svgs/dark-github.svg" alt="Github Logo">
+                    <img class="header__socials-s" src="/img/svgs/dark-linkedin.svg" alt="Linkedin Logo">
+                </div>
+                
+                
+            </div>
+            
+        </header>
+        
+        <section class="section">
+            <div class="section__head">
+                <h1>Hola, me llamo <span class="span-writing">  {{ selfName }} </span></h1>
+                <p>Y soy un desarrollador Web, con conocimientos sobre <span class="span-writing"> {{ typesOfKnow }} </span></p>
+                <p>Soy una persona <span>autodidacta</span> que aprendió por sí mismo, y por la pasión hacia lo que hago.</p>
+            </div>
+        </section>
+        
+        <main>
+            
+        </main>
+        
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
