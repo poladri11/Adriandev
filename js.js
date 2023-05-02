@@ -114,6 +114,24 @@ createApp({
                 }, 50);
 
             }, 2000);
+        },
+
+        moveProjectImg() {
+
+           setInterval(() => {
+               anime({
+                   targets: ".main__proyecto-a-img",
+                   backgroundPositionY: function() {
+                       return Math.floor(Math.random() * 50);
+                   },
+                   backgroundPositionX: function() {
+                       return Math.floor(Math.random() * 100);
+                   },
+                   easing: "easeInOutElastic"
+               })
+            
+           }, 3000);     
+                
         }
     },  
     mounted() {
@@ -121,5 +139,6 @@ createApp({
         this.animeLetters();
         this.fillName();
         this.fillKnow();
+        this.moveProjectImg();
     }
 }).mount("#app");

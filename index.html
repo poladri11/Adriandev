@@ -27,9 +27,15 @@
                 </div>
                 
                 <div class="header__socials">
-                    <img class="header__socials-s" src="/img/svgs/dark-email.svg" alt="Email Logo">
-                    <img class="header__socials-s" src="/img/svgs/dark-github.svg" alt="Github Logo">
-                    <img class="header__socials-s" src="/img/svgs/dark-linkedin.svg" alt="Linkedin Logo">
+                    <a href="mailto:adriybeto@hotmail.com">
+                        <img class="header__socials-s" src="/img/svgs/dark-email.svg" alt="Email Logo">
+                    </a>
+                    <a target="_blank" href="https://github.com/poladri11">
+                        <img class="header__socials-s" src="/img/svgs/dark-github.svg" alt="Github Logo">
+                    </a>
+                    <a target="_blank" href="https://linkedin.com/in/adriansanzdev">
+                        <img class="header__socials-s" src="/img/svgs/dark-linkedin.svg" alt="Linkedin Logo">
+                    </a>
                 </div>
                 
                 
@@ -40,15 +46,65 @@
         <section class="section">
             <div class="section__head">
                 <h1>Hola, me llamo <span class="span-writing">  {{ selfName }} </span></h1>
-                <p>Y soy un desarrollador Web, con conocimientos sobre <span class="span-writing"> {{ typesOfKnow }} </span></p>
-                <p>Soy una persona <span>autodidacta</span> que aprendió por sí mismo, y por la pasión hacia lo que hago.</p>
+                <p>Y soy un desarrollador Web, con conocimientos sobre <span class="span-writing infinite"> {{ typesOfKnow }} </span></p>
+                <p>Soy una persona <span>autodidacta</span> que aprendió gracias al interés y la pasión hacia lo que hago.</p>
+            </div>
+            <div class="section__body">
+                <h2>¿Quieres saber qué proyectos he creado?</h2>
+                <p>Aquí tienes cada proyecto:</p>
             </div>
         </section>
         
         <main>
             
+            <div class="main__proyecto">
+                <a href="https://www.adoptamadridejos.es/" target="_blank">Adopta Madridejos</a>
+                <p>Adopta Madridejos es una asociación que ayuda e intenta buscar casas a los animales en el pueblo de Madridejos, desde hace más de 5 años.</p>
+                <p>Stack usado: </p>
+                <ul> 
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>Js</li>
+                    <li>PhP</li>
+                    <li>MySQL</li>
+                    <li>Composer</li>
+                    <li>Gulp</li>
+                    <li>NodeJs</li>
+                </ul>
+
+                <a class="main__proyecto-a-img" href="https://www.adoptamadridejos.es/">
+
+                </a>
+
+            </div>
+
+            <div class="main__proyecto">
+                <a href="https://www.susanagutierrezph.com" target="_blank">Susana Gutiérrez photography</a>
+                <p>Susana Gutiérrez Photography es una fotógrafa de Alicante, por el cual a través de la web se muestran sus fotos.</p>
+                <p>Stack usado: </p>
+                <ul> 
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>Js</li>
+                    <li>PhP</li>
+                    <li>MySQL</li>
+                    <li>Composer</li>
+                    <li>Gulp</li>
+                    <li>NodeJs</li>
+                </ul>
+
+                <a class="main__proyecto-a-img" href="https://www.susanagutierrezph.com">
+
+                </a>
+
+            </div>
+
         </main>
         
+
+        <footer class="footer">
+            <a>AdrianDev.es</a>
+        </footer>
     </div>
 
     <script src="js.js"></script>

@@ -17,6 +17,7 @@ body {
 
 main {
     height: 100%;
+    margin-bottom: 5rem;
 }
 
 /* Header */
@@ -36,12 +37,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .header p {
     color: #030301;
     font-size: 2.5rem;
 }
+
 
 .header__socials {
     display: flex;
@@ -59,6 +61,9 @@ main {
     left: -20px;
     top: -20px;
 }
+
+
+/* Section */
 
 .section {
     display: flex;
@@ -80,11 +85,126 @@ main {
 
 .section__head .span-writing::after {
     content: '|';
-    color: white;
-    animation: afterWriting .75s infinite;
+    color: transparent;
+    animation: afterWriting .75s;
+    animation-iteration-count: 3;
+}
+
+.infinite::after {
+    animation-iteration-count: infinite !important;
+}
+
+.section__body {
+    width: 100%;
+}
+
+.section__body p {
+    font-size: 1.8rem;
 }
 
 @keyframes afterWriting {
-    0%, 100% { opacity: 0 }
+    0%, 100% { opacity: 0; color: white; }
     50% { opacity: 1; }
+}
+
+/* Main */
+
+.main__proyecto {
+    width: 90%;
+    margin: 4rem auto;
+
+    border: 1px solid white;
+    padding: 1.5rem;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffff3e3;
+}
+
+.main__proyecto a {
+    color: #1c1919;
+    font-size: 1.9rem;
+}
+
+.main__proyecto p {
+    color: #1c1919;
+    font-size: 1.6rem;
+}
+
+.main__proyecto ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
+}
+
+.main__proyecto ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #030301;
+    padding: 1rem;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.main__proyecto .main__proyecto-a-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid #1c1919;
+    transition: background-position 2s linear;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.main__proyecto:nth-child(1) .main__proyecto-a-img {
+    background-image: url(img/bg-projects/adopta.PNG);
+}
+
+.main__proyecto:nth-child(2) .main__proyecto-a-img {
+    background-image: url(img/bg-projects/susana.PNG);
+}
+
+.main__proyecto .main__proyecto-a-img img {
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    height: 5rem;
+    background-color: #FFFFF3;
+    text-align: center;
+    position: relative;
+}
+
+.footer::after,
+.footer::before {
+    content: '';
+    height: 1px;
+    width: 30%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #03030156;
+}
+
+.footer::after {
+    right: 1rem;
+}
+
+.footer::before {
+    left: 1rem;
+}
+
+.footer a {
+    font-size: 2.8rem;
+    position: relative;
 }
